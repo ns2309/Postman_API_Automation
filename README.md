@@ -1,3 +1,7 @@
+![Postman](https://img.shields.io/badge/Postman-API%20Testing-orange)
+![Newman](https://img.shields.io/badge/Newman-CLI-blue)
+![License](https://img.shields.io/badge/Automation-QA-green)
+
 # Postman API Automation Framework
 
 This repository contains API automation tests built using Postman and Newman.  
