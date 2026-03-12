@@ -1,0 +1,70 @@
+{
+  "info": {
+    "_postman_id": "f0bc936d-ff02-49b1-8fc3-bd8d22c0b35d",
+    "name": "GraphQL",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52107506"
+  },
+  "item": [
+    {
+      "name": "Query",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "graphql",
+          "graphql": {
+            "query": "query ($characterId: Int!, $episodeId: Int!) {\r\n  character(characterId: $characterId) {\r\n    id\r\n    name\r\n    gender\r\n    status\r\n  }\r\n\r\n  location(locationId: 8) {\r\n    id\r\n    name\r\n    dimension\r\n  }\r\n}",
+            "variables": "{\r\n    \"chareacterId\": 8,\r\n    \"episodeId\": 1\r\n}"
+          }
+        },
+        "url": {
+          "raw": "https://rahulshettyacademy.com/gq/graphql?",
+          "protocol": "https",
+          "host": [
+            "rahulshettyacademy",
+            "com"
+          ],
+          "path": [
+            "gq",
+            "graphql"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Mutations",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "graphql",
+          "graphql": {
+            "query": "mutation\r\n{\r\n  createLocation(location: {name: \"Aus\", type: \"Southzone\", dimension: \"123\"})\r\n  {\r\n    id \r\n  }\r\n  \r\n  createCharacter(character: {name:\"Nishant\", type: \"Ideal\", status:\"immortal\", species:\"fantasy\", gender:\"male\", image:\"png\",originId:29413 , locationId:29413})\r\n  {\r\n    id\r\n  }\r\n  \r\n  createEpisode(episode:{name: \"Pilot\" , air_date: \"07/23/1998\", episode:\"1\"} )\r\n  {\r\n    id\r\n  }\r\n  deleteLocations(locationIds: [29415, 29414] )\r\n  {\r\n    locationsDeleted\r\n  }\r\n}",
+            "variables": ""
+          }
+        },
+        "url": {
+          "raw": "https://rahulshettyacademy.com/gq/graphql",
+          "protocol": "https",
+          "host": [
+            "rahulshettyacademy",
+            "com"
+          ],
+          "path": [
+            "gq",
+            "graphql"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

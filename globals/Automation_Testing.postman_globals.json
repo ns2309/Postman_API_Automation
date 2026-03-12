@@ -1,0 +1,27 @@
+{
+	"id": "e7af478d-2241-4567-8516-2573bbe5a379",
+	"values": [
+		{
+			"key": "CompanyCode",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "code",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "access_token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"name": "Automation Testing Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2026-03-12T13:55:30.873Z",
+	"_postman_exported_using": "Postman/12.1.2"
+}
